@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { CreateOrderComponent } from './create-order/create-order.component';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,23 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(
+    private modalCtrl: ModalController
+  ) {
+  }
 
+  handleAddFabButtonClick() {
+    console.log('clicked');
+
+    this.modalCtrl
+      .create({
+        component: CreateOrderComponent
+      })
+      .then(
+        modalEl => {
+          modalEl.present();
+          return modalEl.onDidDismiss();
+        }
+      );
+  }
 }

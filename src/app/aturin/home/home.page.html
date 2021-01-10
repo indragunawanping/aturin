@@ -5,11 +5,47 @@
 </ion-header>
 
 <ion-content>
+    <div class="date-text ion-margin-vertical">Sunday, 10th January 2021</div>
 
+    <div class="card-container-1 ion-margin">
+        <ion-card class="card">
+            <ion-card-header>
+                <div class="header-text">Income</div>
+            </ion-card-header>
+
+            <ion-card-content>
+                <div class="detail-text">IDR 50.000.000</div>
+            </ion-card-content>
+        </ion-card>
+        <ion-card class="card">
+            <ion-card-header>
+                <div class="header-text">Expenses</div>
+            </ion-card-header>
+
+            <ion-card-content>
+                <div class="detail-text">IDR 50.000.000</div>
+            </ion-card-content>
+        </ion-card>
+    </div>
+    <div class="card-container-2 ion-margin-horizontal">
+        <ion-card class="card">
+            <ion-card-header>
+                <div class="header-text">Transactions</div>
+            </ion-card-header>
+
+            <ion-card-content>
+                <div class="detail-transaction-text">30</div>
+            </ion-card-content>
+        </ion-card>
+    </div>
 </ion-content>
 
-<ion-fab (click)="handleAddFabButtonClick()" class="button-fab">
-  <ion-fab-button color="secondary">
-    <ion-icon name="add"></ion-icon>
-  </ion-fab-button>
-</ion-fab>
+<ion-footer>
+    <ion-button class="ion-margin" expand="block">Log Out</ion-button>
+</ion-footer>
+
+<!--<ion-fab (click)="handleAddFabButtonClick()" class="button-fab">-->
+<!--  <ion-fab-button color="secondary">-->
+<!--    <ion-icon name="add"></ion-icon>-->
+<!--  </ion-fab-button>-->
+<!--</ion-fab>-->

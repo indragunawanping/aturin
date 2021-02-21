@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Add Item</ion-title>
+        <ion-buttons slot="primary">
+            <ion-button (click)="handleCancelButtonClick()">
+                <ion-icon name="close"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form [formGroup]="itemForm" class="add-item-form" (ngSubmit)="handleAddButtonClick()">
+        <div class="form-container-0">
+            <div class="form-container-0-0">
+                <div class="subsection-title">Item Name</div>
+                <ion-input type="text" formControlName="itemName"
+                           class="ion-no-padding input-text" clearInput autocapitalize="off">
+                </ion-input>
+            </div>
+
+            <div class="form-container-0-1">
+                <div class="subsection-title">Qty</div>
+                <ion-input type="number" formControlName="qty"
+                           class="ion-no-padding input-number" clearInput autocapitalize="off">
+                </ion-input>
+            </div>
+        </div>
+
+        <div class="form-container-1">
+            <div class="form-container-1-0">
+                <div class="subsection-title">Weight</div>
+                <ion-input type="number" formControlName="weight"
+                           class="ion-no-padding input-number" clearInput autocapitalize="off">
+                </ion-input>
+            </div>
+
+            <div class="form-container-1-1">
+                <div class="subsection-title">Date</div>
+                <ion-datetime display-format="DD MMM YYYY"
+                              picker-format="DD MMM YYYY"
+                              formControlName="date"
+                              class="input-date no-padding"
+                >
+                </ion-datetime>
+            </div>
+        </div>
+    </form>
+
+</ion-content>
+
+<ion-footer>
+    <ion-button class="add-button" expand="block" (click)="handleAddButtonClick()">Add</ion-button>
+</ion-footer>

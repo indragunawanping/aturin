@@ -24,3 +24,17 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+.subsection-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ion-color-primary);
+  margin: 0;
+}
+
+.input-text, .input-number, .input-date {
+  font-size: 12px;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+}

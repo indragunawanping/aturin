@@ -5,7 +5,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { CreateOrderComponent } from './create-order/create-order.component';
 
 
 @NgModule({
@@ -13,10 +12,9 @@ import { CreateOrderComponent } from './create-order/create-order.component';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
-    ReactiveFormsModule
+    HomePageRoutingModule
   ],
-  declarations: [HomePage, CreateOrderComponent],
-  entryComponents: [CreateOrderComponent]
+  declarations: [HomePage]
 })
-export class HomePageModule {}
+export class HomePageModule {
+}

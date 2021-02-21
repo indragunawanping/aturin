@@ -1,0 +1,40 @@
+.add-item-form {
+  .form-container-0 {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+
+    .form-container-0-0 {
+      padding: 10px;
+      width: 70%;
+    }
+
+    .form-container-0-1 {
+      padding: 10px;
+      width: 30%;
+    }
+  }
+
+  .form-container-1{
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+
+    .form-container-1-0 {
+      padding: 10px;
+      width: 50%;
+    }
+
+    .form-container-1-1 {
+      padding: 5px;
+      width: 50%;
+    }
+  }
+}
+
+ion-footer{
+  .add-button{
+    margin: 15px;
+  }
+}
+

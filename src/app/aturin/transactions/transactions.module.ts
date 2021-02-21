@@ -1,20 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
 import { TransactionsPageRoutingModule } from './transactions-routing.module';
 
 import { TransactionsPage } from './transactions.page';
+import { AddTransactionComponent } from './add-transaction/add-transaction.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TransactionsPageRoutingModule
+    TransactionsPageRoutingModule,
+    ReactiveFormsModule
   ],
-  declarations: [TransactionsPage]
+  declarations: [TransactionsPage, AddTransactionComponent],
+  entryComponents: [AddTransactionComponent]
 })
 export class TransactionsPageModule {}
